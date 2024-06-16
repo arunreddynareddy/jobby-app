@@ -1,0 +1,165 @@
+.jobs-container {
+  background-color: #000000;
+  display: flex;
+  min-height: 90vh;
+}
+
+@media screen and (max-width: 768px) {
+  .jobs-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.filters-group-container {
+  width: 30%;
+  padding: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .filters-group-container {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+.search-list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 70%;
+  padding: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .search-list-container {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+.search-container {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  border: 1px solid #64748b;
+  border-radius: 3px;
+  height: 30px;
+  width: 45%;
+}
+
+@media screen and (max-width: 768px) {
+  .search-container {
+    width: 100%;
+  }
+}
+
+.search-input {
+  background-color: #000000;
+  border: none;
+  color: #f8fafc;
+  font-family: 'Roboto';
+  font-size: 12px;
+  font-weight: 500;
+  padding-left: 10px;
+  outline: none;
+  flex-grow: 1;
+}
+
+.search-button {
+  background-color: #272727;
+  border: none;
+  padding: 0px 15px 0px 15px;
+  margin: 0;
+  height: 100%;
+}
+
+.search-icon {
+  color: #f8fafc;
+}
+
+.jobs-list-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-left: 0;
+}
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100%;
+}
+
+.jobs-failure-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
+.jobs-failure-image {
+  width: 350px;
+}
+
+.jobs-failure-heading {
+  color: #f8fafc;
+  font-family: 'Roboto';
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.jobs-failure-description {
+  color: #f8fafc;
+  font-family: 'Roboto';
+  font-size: 10px;
+  font-weight: 400;
+  margin-top: 0;
+}
+
+.jobs-failure-button {
+  background-color: #4f46e5;
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-size: 12px;
+  font-weight: 600;
+  padding: 12px 24px 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+}
+
+.no-jobs-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
+.no-jobs-image {
+  width: 350px;
+}
+
+.no-jobs-heading {
+  color: #f8fafc;
+  font-family: 'Roboto';
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.no-jobs-description {
+  color: #f8fafc;
+  font-family: 'Roboto';
+  font-size: 10px;
+  font-weight: 400;
+  margin-top: 0;
+}

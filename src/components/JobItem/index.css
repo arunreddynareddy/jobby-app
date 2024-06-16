@@ -1,0 +1,128 @@
+.link-item {
+  text-decoration: none;
+}
+
+.job-item-container {
+  background-color: #272727;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: none;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 15px 0px 15px 0px;
+}
+
+.image-title-container {
+  display: flex;
+  align-items: center;
+}
+
+.job-item-logo {
+  width: 50px;
+}
+
+.title-rating-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 15px;
+}
+
+.job-item-title {
+  color: #f8fafc;
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.rating-container {
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.star-icon {
+  color: #fbbf24;
+  size: 10px;
+  margin: 0;
+}
+
+.item-rating {
+  color: #f8fafc;
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0px 0px 0px 5px;
+}
+
+.location-annum-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.location-type-container {
+  display: flex;
+  align-items: center;
+}
+
+.location-icon {
+  color: #f8fafc;
+  size: 10px;
+}
+.item-location {
+  color: #f8fafc;
+  font-family: 'Roboto';
+  font-size: 10px;
+  font-weight: 500;
+  margin-left: 5px;
+}
+
+.office-icon {
+  color: #f8fafc;
+  size: 10px;
+  margin-left: 18px;
+}
+
+.item-employment-type {
+  color: #f8fafc;
+  font-family: 'Roboto';
+  font-size: 10px;
+  font-weight: 500;
+  margin-left: 5px;
+}
+
+.item-package {
+  color: #f8fafc;
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.hr-line {
+  width: 100%;
+  color: #b6c5ff;
+}
+
+.item-description-heading {
+  color: #f8fafc;
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.item-description {
+  color: #f8fafc;
+  font-family: 'Roboto';
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 5px;
+  line-height: 1.7;
+}
