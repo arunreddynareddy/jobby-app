@@ -1,3 +1,10 @@
+.filters-container {
+  position: sticky;
+  top: 12vh;
+  overflow-y: scroll;
+  height: 90vh;
+}
+
 .hr-line {
   color: #b6c5ff;
   width: 100%;
@@ -28,6 +35,7 @@
 .filter-input {
   color: #f8fafc;
   border: none;
+  cursor: pointer;
 }
 
 .filter-label {
@@ -37,4 +45,5 @@
   font-weight: 400;
   margin-left: 10px;
   margin-top: 3px;
+  cursor: pointer;
 }

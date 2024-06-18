@@ -21,6 +21,7 @@ class Jobs extends Component {
     searchInput: '',
     employmentTypes: '',
     salaryRange: '',
+    location: '',
     jobsData: [],
   }
 
@@ -66,8 +67,12 @@ class Jobs extends Component {
     this.setState({salaryRange: id}, this.getJobsList)
   }
 
-  getEmploymentType = array => {
-    this.setState({employmentTypes: array}, this.getJobsList)
+  getEmploymentType = employmentTypesArray => {
+    this.setState({employmentTypes: employmentTypesArray}, this.getJobsList)
+  }
+
+  getLocation = locationArray => {
+    this.setState({location: locationArray}, this.getJobsList)
   }
 
   onChangeSearchInput = event => {
@@ -116,14 +121,22 @@ class Jobs extends Component {
   )
 
   renderJobsList = () => {
-    const {jobsData} = this.state
+    const {jobsData, location} = this.state
+
+    let locationsFilteredJobsList = jobsData
+
+    if (location.length >= 1) {
+      locationsFilteredJobsList = jobsData.filter(eachJob =>
+        location.includes(eachJob.location),
+      )
+    }
 
     return (
       <>
         {' '}
         {jobsData.length > 0 ? (
           <ul className="jobs-list-container">
-            {jobsData.map(eachJob => (
+            {locationsFilteredJobsList.map(eachJob => (
               <JobItem key={eachJob.id} jobDetails={eachJob} />
             ))}
           </ul>
@@ -189,6 +202,7 @@ class Jobs extends Component {
             <FiltersGroup
               getSalaryRange={this.getSalaryRange}
               getEmploymentType={this.getEmploymentType}
+              getLocation={this.getLocation}
             />
           </div>
           <div className="search-list-container">
